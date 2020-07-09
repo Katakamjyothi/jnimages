@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM</title>
+	<style type="text/css">
+		.details{
+			width: 83%;
+			padding: 1%;
+			margin: 5%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			background-color: #A3E4D7;
+
+
+		}
+		p{
+			font-size:25px;
+			font-weight: bold;
+		}
+		#nature{
+			border-radius: 5%;
+		}
+	
+	</style>
+</head>
+<body>
+	<div class="details">
+		<img  id="nature" src="jyo1.jpg"width="250px"height="250px" >
+		<div class="info">
+			<p>Rabbit calls me:Jyo</p>
+			<p>Realation:Frds forever</p>
+			<p>Fav:chocolate</p>
+			<p>Bday:march 10</p>
+		</div>
+
+		</div>
+		<button type="submit"onclick="changeimage()"style="background-color: cyan;size: 500px">WANNA SEE RABBIT</button>		
+
+
+
+		<script type="text/javascript">
+			function changeimage()
+			{
+				document.getElementById('nature').src='jyo2.jpg';
+
+				var list=document.getElementsByClassName("info")[0];
+				list.getElementsByTagName("p")[0].
+				textContent="Jyo calls me:rabbit";
+				list.getElementsByTagName("p")[1].
+				textContent="Realation:Frds forever";
+				list.getElementsByTagName("p")[2].
+				textContent="Fav:Toys";
+				list.getElementsByTagName("p")[3].
+				textContent="Bday:march 16";
+
+			}
+		</script>
+
+</body>
+</html>
